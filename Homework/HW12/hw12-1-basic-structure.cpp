@@ -40,3 +40,28 @@
         Score : 87.60 points
 
 */
+
+#include<stdio.h>
+
+struct person {
+        char Name[20] ;
+        int Age ;
+        char Sex ;
+        float Score ;
+
+    } ;
+
+int main() {
+    struct person personA = { "Mai" , 24 , 'M' , 99.99 } ;
+    struct person personB = { "Mon" , 21 , 'F' , 87.60 } ;
+
+    printf ( "--| Person A Information |--\n" ) ;
+    printf ( "Name : %s (%c)\n" ,personA.Name , personA.Sex ) ;
+    printf ( "Age : %d\n" ,personA.Age ) ;
+    printf ( "Score : %0.2f\n" ,personA ) ;
+    
+    printf ( "--| Person A Information |--\n" ) ;
+    printf ( "Name : %s (%c)\n" ,personB.Name , personB.Sex ) ;
+    printf ( "Age : %d\n" ,personB.Age ) ;
+    printf ( "Score : %0.2f\n" ,personB ) ;
+}
